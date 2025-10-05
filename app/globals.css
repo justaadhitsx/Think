@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "dither-plugin";
 
 :root {
   --background: #ffffff;
@@ -10,6 +11,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-wenkai: var(--font-wenkai);
+  --font-nanum: var(--font-nanum);
 }
 
 @media (prefers-color-scheme: dark) {
