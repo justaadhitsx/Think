@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "dither-plugin": "^1.1.1",
     "motion": "^12.23.22",
     "next": "15.5.4",

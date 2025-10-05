@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import {
   Geist,
   Geist_Mono,
@@ -30,7 +31,7 @@ const nanumGothic = Nanum_Gothic({
 });
 
 export const metadata: Metadata = {
-  title: "Think",
+  title: "Think - The web app that helps you live like a monk",
   description: "The web app that helps you live like a monk",
 };
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${wenkai.variable} ${nanumGothic.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
