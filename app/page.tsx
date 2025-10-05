@@ -1,8 +1,9 @@
 "use client";
 import { motion } from "motion/react";
+import { memo } from "react";
 import Link from "next/link";
 
-export default function Home() {
+function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white gap-14">
       <div className="flex flex-col items-center justify-center gap-3.5">
@@ -52,6 +53,7 @@ export default function Home() {
           loop
           muted
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover"
         />
       </motion.div>
@@ -61,3 +63,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default memo(Home);
